@@ -70,6 +70,7 @@
             this.txtv1.Name = "txtv1";
             this.txtv1.Size = new System.Drawing.Size(116, 22);
             this.txtv1.TabIndex = 3;
+            this.txtv1.TextChanged += new System.EventHandler(this.txtv1_TextChanged);
             // 
             // txtv2
             // 

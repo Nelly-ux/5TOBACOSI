@@ -12,9 +12,17 @@ namespace IMC
 {
     public partial class Form1 : Form
     {
+
+        static operaciones op = new operaciones();
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void txtv1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
