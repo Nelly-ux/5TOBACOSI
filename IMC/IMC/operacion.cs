@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace IMC
 {
-    class operaciones
+    class operacion
     {
-        public double IMC(double e, double p)
-        {
-            return (e/ (p*p));
-        }
-        //a=peso b=altura
-
     }
 }

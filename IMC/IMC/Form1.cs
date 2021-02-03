@@ -24,5 +24,13 @@ namespace IMC
         {
 
         }
+
+        private void cmdres_Click(object sender, EventArgs e)
+        {
+            lblres.Text = (op.IMC(double.Parse(txtv1.Text), double.Parse(txtv2.Text))).ToString();
+
+
+
+        }
     }
 }
