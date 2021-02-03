@@ -27,9 +27,37 @@ namespace IMC
 
         private void cmdres_Click(object sender, EventArgs e)
         {
+
+            
+
             lblres.Text = (op.IMC(double.Parse(txtv1.Text), double.Parse(txtv2.Text))).ToString();
 
+           
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbltipo_Click(object sender, EventArgs e)
+        {
+            if (double.Parse(lblres.Text) < 18)
+            {
+                MessageBox.Show("BAJO PESO");
+            }
+            else if (double.Parse(lblres.Text) < 25)
+            {
+                MessageBox.Show("PESO NORMAL");
+            }
+            else if (double.Parse(lblres.Text) < 30)
+            {
+                MessageBox.Show("SOBRE PESO");
+            }
+            else
+            {
+                MessageBox.Show("OBESIDAD");
+            }
 
         }
     }
